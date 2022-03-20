@@ -319,25 +319,19 @@ void scoresOne() {
     int test4;
     double average;         // calculated average of test scores
 
-    /*
-     * Input Phase
-     */
+    /* Input Phase */
 
     // gather input from user
     cout << "Enter five test scores: ";
     cin >> test0 >> test1 >> test2 >> test3 >> test4;
     cout << endl;
 
-    /*
-     * Processing Phase
-     */
+    /* Processing Phase */
 
     // calculate the average of the scores
     average = static_cast<double>(test0 + test1 + test2 + test3 + test4) / 5.0;
 
-    /*
-     * Output Phase
-     */
+    /* Output Phase */
 
     // set output formatting
     cout << fixed << showpoint << setprecision(2);
@@ -366,17 +360,13 @@ void scoresOne() {
 ///        Accepts 5 integer scores, finds their average
 ///        and prints the relationship between the average and each
 ///        score.
-///
-/// @see page 522 of the text
 void scoresExample8_4() {
     int test[5];                // scores inputted by user
     int sum = 0;                // accumulator
     double average;             // calculated average of scores
     int index;                  // tracks location in array
 
-    /*
-    * Input Phase
-    */
+    /* Input Phase */
 
     // gather input from user and accumulate total
     cout << "Enter five test scores: ";
@@ -385,9 +375,7 @@ void scoresExample8_4() {
     }
     cout << endl;
 
-    /*
-    * Processing Phase
-    */
+    /* Processing Phase */
 
     // find the total accumulated score
     for (index = 0; index < 5; index++) {
@@ -397,9 +385,7 @@ void scoresExample8_4() {
     // calculate the average
     average = sum / 5.0;
 
-    /*
-    * Output Phase
-    */
+    /* Output Phase */
 
     // set output formatting
     cout << fixed << showpoint << setprecision(2);
