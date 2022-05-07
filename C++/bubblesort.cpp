@@ -16,14 +16,14 @@ int main() {
 
 	//Bubble sort
 	//Loop to control number of passes
-	for (int i = 0; i < arraySize-1; i++) {
+	for (int i = 0; i < arraySize - 1; i++) {
 		//Loop to control number of comparisons per pass
-		for (int j = 0; j < arraySize-1; j++) {
+		for (int j = 0; j < arraySize - i - 1; j++) {
 			//Compare side-by-side elements and swap them if first element is greater than second element
-			if (a[j] > a[j+1]) {
+			if (a[j] > a[j + 1]) {
 				hold = a[j];    //Place element a[j] in hold.
-				a[j] = a[j+1];  //Element a[j] takes a[j+1] value.
-				a[j+1] = hold;  //a[j+1] takes a[j] value from temp hold.
+				a[j] = a[j + 1];  //Element a[j] takes a[j+1] value.
+				a[j + 1] = hold;  //a[j+1] takes a[j] value from temp hold.
 			}
 		}
 	}
